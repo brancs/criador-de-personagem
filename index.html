@@ -11,10 +11,193 @@
     <div class="container">
         <div class="row">
             <div class="col-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos esse impedit quasi cumque, dicta repellat molestias aliquam error commodi provident quibusdam eos voluptatibus quos alias atque sit earum iste distinctio.
+                <button id="generateRandomBtn">Gerar personagem aleatório</button>
+                <form onsubmit="return validate()" id="characterForm">
+                    <h4>Informações básicas</h4>
+                    
+                    <div class="form-group">
+                        <label for="characterName">Name</label>
+                        <input type="text" class="form-control" id="characterName" placeholder="Ex.: Astrix, Lorent">
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="feminino" checked>
+                        <label class="form-check-label" for="genderFemale">
+                            Feminino
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="genderMale" value="masculino">
+                        <label class="form-check-label" for="genderMale">
+                            Masculino
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="origin">Origem</label>
+                        <select class="form-control" id="origin">
+                            <option value="Humanos">Humanos</option>
+                            <option value="Anthroplantae">Anthroplantae</option>
+                            <option value="Contructos">Contructos</option>
+                            <option value="Meio Dragão">Meio Dragão</option>
+                            <option value="Minotauros">Minotauros</option>
+                            <option value="Vastaya">Vastaya</option>
+                            <option value="Yordles">Yordles</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="rpgClass">Classe</label>
+                        <select class="form-control" id="rpgClass">
+                            <option>Acólito</option>
+                            <option>Arcano</option>
+                            <option>Atirador</option>
+                            <option>Bodsativa</option>
+                            <option>Bruto</option>
+                            <option>Caçador</option>
+                            <option>Combatente</option>
+                            <option>Mercurial</option>
+                            <option>Ninja</option>
+                            <option>Peregrino</option>
+                            <option>Tecmaturgo</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="rpgClass">Região</label>
+                        <select class="form-control" id="region">
+                            <option>Águas de Sentina</option>
+                            <option>Bandópolis</option>
+                            <option>Demacia</option>
+                            <option>Freljord</option>
+                            <option>Ilhas das Sombras</option>
+                            <option>Ionia</option>
+                            <option>Ixtal</option>
+                            <option>Monte Targon</option>
+                            <option>Noxus</option>
+                            <option>Piltover</option>
+                            <option>Shurima</option>
+                            <option>Vazio</option>
+                            <option>Zaun</option>
+                        </select>
+                    </div>
+                    <h4>Runas</h4>
+                    <div class="form-group">
+                        <label for="rpgClass">Pulso Rúnico</label>
+                        <select class="form-control" id="runicPulse">
+                            <option>Agitação</option>
+                            <option>Anime-se</option>
+                            <option>Aprumo Marcial</option>
+                            <option>Apunhalar</option>
+                            <option>Ataque Amaldiçoado</option>
+                            <option>Barreira de Ki</option>
+                            <option>Barreira de Mana</option>
+                            <option>Batida do Amor</option>
+                            <option>Benção da Forja Viva</option>
+                            <option>Caçador Noturno</option>
+                            <option>Cadência Marcial</option>
+                            <option>Caminho da Guerra</option>
+                            <option>Chamado de Freljord</option>
+                            <option>Companhia</option>
+                            <option>Dádiva dos Afogados</option>
+                            <option>Dança do Duelista</option>
+                            <option>Dando Corda</option>
+                            <option>Desprezo pelos Fracos</option>
+                            <option>Devorador de Almas</option>
+                            <option>Domínio da Ira</option>
+                            <option>Escolhido da Tormenta</option>
+                            <option>Essência da Guerra</option>
+                            <option>Estilo do Errante</option>
+                            <option>Fervo Ioniano</option>
+                            <option>Fúria Ampliada</option>
+                            <option>Fúria da Batalha</option>
+                            <option>Golpes Concussivos</option>
+                            <option>Hemorragia</option>
+                            <option>Iluminação</option>
+                            <option>Investida Implacável</option>
+                            <option>Lâminas Sombrias</option>
+                            <option>Lutador Ágil</option>
+                            <option>Lutador Ligeiro</option>
+                            <option>Marca da Tormenta</option>
+                            <option>Marca de Caça</option>
+                            <option>Misericórdia</option>
+                            <option>Munição de Energia</option>
+                            <option>Perseverança</option>
+                            <option>Pés Ligeiros</option>
+                            <option>Piromania</option>
+                            <option>Potência Arcana</option>
+                            <option>Proteção da Édige</option>
+                            <option>Roubo de Essência</option>
+                            <option>Salvação</option>
+                            <option>Seiva Mágica</option>
+                            <option>Sifão da Alma</option>
+                            <option>Tiro Gelado</option>
+                            <option>Toque Amaldiçoado</option>
+                            <option>Tributo do Rei</option>
+                            <option>Voracidade</option>
+                            <option>Zéfiro</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
             <div class="col-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio laboriosam, atque quibusdam est officiis tempore. Sapiente fuga adipisci a quis autem repudiandae omnis nesciunt hic doloribus laborum. Repudiandae, vitae.
+               <div class="row">
+                   <div class="col-6">
+                    <div id="myCharacter">
+                        <p class="characterName">Nome: </p>
+                        <p class="characterName">Origem: </p>
+                        <p class="characterName">Genêro: </p>
+                        <p class="characterName">Classe: </p>
+                        <p class="characterName">Região: </p>
+                    </div>
+                   </div>
+                   <div class="col-6">
+                    <div id="myCharacterMore">
+                        <p class="characterName">Pontos de Vida: </p>
+                        <p class="characterName">Dados de Vida: </p>
+                        <p class="characterName">Iniciativa: </p>
+                        <p class="characterName">Percepção: </p>
+                        <p class="characterName">Pulso Rúnico: </p>
+                    </div>
+                   </div>
+               </div>
+               <div class="row">
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="characterStrength">Força <span id="strengthMod"></span></label>
+                            <input type="number" class="form-control" id="characterStrength" value="8">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="characterDexterity">Destreza <span id="dexterityMod"></span></label>
+                            <input type="number" class="form-control" id="characterDexterity" value="8">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="characterConstitution">Constituição <span id="constitutionMod"></span></label>
+                            <input type="number" class="form-control" id="characterConstitution" value="8">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="characterIntelligence">Inteligência <span id="intelligenceMod"></span></label>
+                            <input type="number" class="form-control" id="characterIntelligence" value="8">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="characterWisdom">Sabedoria <span id="wisdomMod"></span></label>
+                            <input type="number" class="form-control" id="characterWisdom" value="8">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="characterCharisma">Carisma <span id="charismaMod"></span></label>
+                            <input type="number" class="form-control" id="characterCharisma" value="8">
+                        </div>
+                    </div>
+               </div>
             </div>
         </div>
     </div>
@@ -22,6 +205,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="/assets/js/main_script.js"></script>
+    <script type="module" src="./assets/js/main_script.js"></script>
 </body>
 </html>
